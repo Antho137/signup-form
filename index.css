@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0 auto;
+    font-family: Helvetica;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    background-color: #F0F8FF;
+}
+
+main .img {
+    width: 100%;
+    height: auto;
+}
+
+#image {
+    padding: 0;
+}
+
+#intro {
+    padding: 50px;
+}
+
+.intro .need {
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.intro .sign {
+    color: #008000;
+    font-size: 1.25rem;
+}
+
+form {
+    padding: 20px;
+    background-color: #FFF;
+}
+
+form label {
+    font-size: .75rem;
+    font-weight: 500;
+}
+
+form input {
+    height: 25px;
+    width: 250px;
+    font-size: .875rem;
+    border-radius: 4px;
+    border: 1px solid #E5E7EB;
+}
+
+input:default {
+    border-color: #E5E7EB;
+}
+
+input:focus {
+    border-color: blue;
+}
+
+input:valid {
+    border-color: green;
+}
+
+input:invalid {
+    border-color: red;
+}
+    
+form button {
+    width: 250px;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.para {
+    margin: 20px 0;
+    font-size: .875rem;
+}
+
+@media screen and (min-width: 410px) {
+
+    form input, form button {
+        width: 300px;
+    }
+}
+
+@media screen and (min-width: 540px) {
+
+    form input, form button {
+        width: 400px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .flex, main {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .flex {
+        gap: 40px;
+    }
+
+    form input {
+        width: 300px;
+    }    
+    
+    form button {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1020px) {
+
+    main {
+        width: 960px;
+    }
+
+    main .img {
+        width: 95%;
+        height: 600px;
+    }
+
+    #intro {
+        padding-right: 30px;
+    }
+
+    .flex > div {
+        width: 50%;
+    }
+
+    form input {
+        width: 100%;
+    }
+}
